@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  bike-race:
+    build: .
+    container_name: bike-race-game
+    ports:
+      - "80:80"
+    restart: unless-stopped
